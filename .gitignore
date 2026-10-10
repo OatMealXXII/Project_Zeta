@@ -1,0 +1,41 @@
+# ==========================================
+# KiCad Backup & Autosave (ขยะที่ไม่ต้องขึ้น)
+# ==========================================
+*-bak
+*-bak.kicad_sch
+*-bak.kicad_pcb
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl-bak
+*.kicad_wks-bak
+_autosave-*
+*.autosave
+
+# Recovery and Lock files
+*.lck
+*.lock
+
+# Temporary and design rule check reports
+*.drc
+*.erc
+*.rpt
+
+# 3D Cache
+*.3dshapes/
+
+# ==========================================
+# Operating System Trash
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.directory
+
+# ==========================================
+# Production & Manufacturing (Explicitly Allowed)
+# ==========================================
+# อนุญาตไฟล์ Gerber, Drill และ ZIP สำหรับส่งผลิต
+!gerber/
+!*.zip
+!*.gbr
+!*.drl
