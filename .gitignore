@@ -10,6 +10,7 @@
 *.kicad_wks-bak
 _autosave-*
 *.autosave
+Project_Zeta-backups/
 
 # Recovery and Lock files
 *.lck
