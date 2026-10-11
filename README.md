@@ -81,6 +81,8 @@ The input power stage incorporates a multi-tier protection network designed to w
 
 ---
 
+![Project Zeta](https://github.com/OatMealXXII/Weather_Station/blob/master/Project_Zeta.png)
+
 ## Roadmap
 
 * [x] **Rev 1.0 (Current):** 2-Layer modular carrier board prototyping, discrete protection stage validation.
