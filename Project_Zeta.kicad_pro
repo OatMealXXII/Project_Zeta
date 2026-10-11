@@ -229,7 +229,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "1.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -645,7 +645,7 @@
         "uuid": "b7cbf9ba-1d9b-4947-9522-3e812c70318f"
       }
     ],
-    "used_designators": "J8-9",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
