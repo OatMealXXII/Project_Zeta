@@ -11052,7 +11052,7 @@
 		)
 	)
 	(gr_text "Design by OatMealXXII"
-		(at 121.75 94.5 0)
+		(at 177.5 101.25 0)
 		(layer "B.SilkS")
 		(uuid "8d73ac8d-d9f0-4e43-be02-6e02e9a175ef")
 		(effects
@@ -11101,6 +11101,18 @@
 			(justify left bottom mirror)
 		)
 	)
+	(barcode
+		(at 140.5 118.5 0)
+		(layer "B.SilkS")
+		(size 13 13)
+		(text "https://oatmealxxii.me")
+		(text_height 0.8)
+		(type qr)
+		(ecc_level H)
+		(hide no)
+		(knockout no)
+		(uuid "b0c70196-6e0c-4d53-a2e5-4bb732683f0c")
+	)
 	(segment
 		(start 154.035 117.07)
 		(end 153.289684 117.07)
@@ -11145,7 +11157,7 @@
 		(uuid "357c6919-3f2f-490a-8717-5555b518fb4c")
 	)
 	(via
-		(at 108.25 88.25)
+		(at 125.75 100.5)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -11199,15 +11211,6 @@
 		(uuid "712540a7-084f-4a3a-aeea-f0aff1743eb1")
 	)
 	(via
-		(at 140.25 121.5)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net "GND")
-		(uuid "769b1c54-f238-412d-b966-1ccf33e0c30a")
-	)
-	(via
 		(at 163 123.25)
 		(size 0.6)
 		(drill 0.3)
@@ -11244,13 +11247,22 @@
 		(uuid "c3bd6ad5-a73e-4f37-8833-f507a9d4c430")
 	)
 	(via
-		(at 143.75 111.5)
+		(at 144.25 109.5)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(free yes)
 		(net "GND")
 		(uuid "d175eace-b520-48fb-bf4a-ebd052b0daf8")
+	)
+	(via
+		(at 113.5 101.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "GND")
+		(uuid "d822b343-d125-4711-bd60-7ee1a4daf75e")
 	)
 	(via
 		(at 161.75 115)
@@ -11260,6 +11272,15 @@
 		(free yes)
 		(net "GND")
 		(uuid "e244a774-138b-4bec-a301-c8398854a502")
+	)
+	(via
+		(at 114.75 107)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net "GND")
+		(uuid "f684ce22-9afc-4f37-bc09-6e6493c03b3e")
 	)
 	(via
 		(at 162 58.5)
@@ -11697,7 +11718,7 @@
 	(segment
 		(start 121.95 109.95)
 		(end 122.5 110.5)
-		(width 0.2)
+		(width 0.7)
 		(layer "F.Cu")
 		(net "Net-(D1-A)")
 		(uuid "adddf199-88c7-48e6-8792-36de6b50a060")
