@@ -1,4 +1,4 @@
-# IoT Carrier Board for ESP32 (Project Zeta) - Rev 1.0
+# IoT Carrier Board for ESP32 (Project Zeta) - Rev 1.1
 
 A modular, IoT Carrier Board designed for Rasberry Pi Pico 2 or 2W microcontrollers deployed in outdoor and edge computing environments. This board provides robust power distribution, multi-stage electrical protection, and clean sensor I/O interfacing.
 
@@ -85,5 +85,6 @@ The input power stage incorporates a multi-tier protection network designed to w
 
 ## Roadmap
 
-* [x] **Rev 1.0 (Current):** 2-Layer modular carrier board prototyping, discrete protection stage validation.
+* [x] **Rev 1.0 (Previous):** 2-Layer modular carrier board prototyping, discrete protection stage validation.
+* [x] **Rev 1.1 (Current):** 2-Layer of GND plate and add 3V3_EXT with protection for high-current power sensor needed and fix some wrong point as I knew.
 * [ ] **Rev 2.0 (Planned):** 4-Layer stackup optimization featuring a dedicated solid ground plane (L2) and power plane (L3) for enhanced EMI reduction, signal integrity and support more alternative power.
