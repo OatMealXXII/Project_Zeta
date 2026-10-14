@@ -3766,12 +3766,6 @@
 		)
 	)
 	(junction
-		(at 132.08 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1150dd12-c068-4adc-acaa-120b884673d7")
-	)
-	(junction
 		(at 204.47 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3826,10 +3820,10 @@
 		(uuid "9e35a7f7-8647-45c0-8a26-afb2cad8f469")
 	)
 	(junction
-		(at 132.08 88.9)
+		(at 132.08 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c20d15c9-7553-460f-b249-51db37a1d83f")
+		(uuid "b23dc275-6d90-42a0-ae55-9efd3e26b4a2")
 	)
 	(junction
 		(at 191.77 104.14)
@@ -3842,6 +3836,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3b3b594-80ab-43c5-9141-45fe39134aab")
+	)
+	(junction
+		(at 132.08 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4da541c-1bdb-4d3c-ae97-781d061d2e52")
 	)
 	(junction
 		(at 139.7 109.22)
@@ -3864,6 +3864,16 @@
 			(type default)
 		)
 		(uuid "0618fba0-a0da-4545-8a1e-da14aa8b389b")
+	)
+	(wire
+		(pts
+			(xy 124.46 96.52) (xy 125.73 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0729bfce-dc53-4af1-9411-7232cacf6938")
 	)
 	(wire
 		(pts
@@ -3924,6 +3934,16 @@
 			(type default)
 		)
 		(uuid "12e0724e-b98f-4e88-a9af-bddde7f302e2")
+	)
+	(wire
+		(pts
+			(xy 124.46 105.41) (xy 119.38 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "136a080f-7e8f-46cb-8d0f-afb75f9f4090")
 	)
 	(wire
 		(pts
@@ -4087,7 +4107,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 83.82) (xy 128.27 81.28)
+			(xy 128.27 81.28) (xy 128.27 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4104,16 +4124,6 @@
 			(type default)
 		)
 		(uuid "527b9bdb-80ed-4403-a7a0-3cd243feb584")
-	)
-	(wire
-		(pts
-			(xy 132.08 88.9) (xy 134.62 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53eb929b-1bed-459b-98be-0f4079dcc459")
 	)
 	(wire
 		(pts
@@ -4144,6 +4154,16 @@
 			(type default)
 		)
 		(uuid "5a78dda6-32e0-4677-8f85-089dba7ebc62")
+	)
+	(wire
+		(pts
+			(xy 119.38 105.41) (xy 119.38 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b74a483-784b-4a0d-b61f-8d996c7f7eb0")
 	)
 	(wire
 		(pts
@@ -4234,16 +4254,6 @@
 			(type default)
 		)
 		(uuid "6e90eac3-6a01-4e4a-a037-7ae52608921d")
-	)
-	(wire
-		(pts
-			(xy 125.73 97.79) (xy 125.73 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f29f702-7fdb-4a57-b14a-22f90a5a4e00")
 	)
 	(wire
 		(pts
@@ -4527,6 +4537,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 74.93) (xy 135.89 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c096c4a6-02da-4154-9b38-ebd17ef71543")
+	)
+	(wire
+		(pts
 			(xy 176.53 105.41) (xy 173.99 105.41)
 		)
 		(stroke
@@ -4564,6 +4584,16 @@
 			(type default)
 		)
 		(uuid "c710abe2-abaa-41ad-899f-d37d916c907a")
+	)
+	(wire
+		(pts
+			(xy 124.46 97.79) (xy 124.46 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9c97f39-47e7-4214-8830-9f80f0418149")
 	)
 	(wire
 		(pts
@@ -4647,6 +4677,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 88.9) (xy 134.62 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9d045e4-e05c-4cd0-a28b-fa0fdb945f82")
+	)
+	(wire
+		(pts
 			(xy 147.32 101.6) (xy 139.7 101.6)
 		)
 		(stroke
@@ -4684,16 +4724,6 @@
 			(type default)
 		)
 		(uuid "f8a8d053-71a4-47d9-a560-56948aa2e62b")
-	)
-	(wire
-		(pts
-			(xy 132.08 74.93) (xy 135.89 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbf9ec22-ee5f-4837-b211-54e2792eaa91")
 	)
 	(label "GP12"
 		(at 203.2 77.47 180)
@@ -4794,16 +4824,6 @@
 			(justify left bottom)
 		)
 		(uuid "3063f143-9f76-4089-b494-1b8d9bcc3624")
-	)
-	(label "+5V"
-		(at 125.73 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "32286e4c-fea7-407f-a623-7c401c8f3963")
 	)
 	(label "VBUS"
 		(at 134.62 114.3 0)
@@ -5094,6 +5114,16 @@
 			(justify right bottom)
 		)
 		(uuid "b2b09954-231a-48eb-b90b-f8dc4e7e6d81")
+	)
+	(label "VSYS"
+		(at 132.08 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4160f95-c8b7-46fd-8736-59a961d888c9")
 	)
 	(label "3V3_OUT"
 		(at 196.85 45.72 0)
@@ -6178,7 +6208,7 @@
 	)
 	(symbol
 		(lib_id "Diode:SMAJ5.0A")
-		(at 132.08 82.55 270)
+		(at 132.08 82.55 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6189,7 +6219,7 @@
 		(dnp no)
 		(uuid "6a4ed8e4-7898-4535-b17b-c53387c44c1d")
 		(property "Reference" "D2"
-			(at 134.62 83.8201 90)
+			(at 129.54 81.2799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6200,7 +6230,7 @@
 			)
 		)
 		(property "Value" "SMAJ5.0A"
-			(at 134.62 81.2801 90)
+			(at 129.54 83.8199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6211,7 +6241,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 127 82.55 0)
+			(at 137.16 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6222,7 +6252,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 132.08 83.82 0)
+			(at 132.08 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6500,8 +6530,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 132.08 74.93 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "870a168f-a01d-44ef-811f-040e3a34bdef")
+		(property "Reference" "#PWR017"
+			(at 132.08 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 131.318 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "429b93a3-4af6-4256-bee2-f89384fc610d")
+		)
+		(instances
+			(project "Project_Zeta"
+				(path "/b7cbf9ba-1d9b-4947-9522-3e812c70318f"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 125.73 101.6 180)
+		(at 124.46 101.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6512,7 +6619,7 @@
 		(fields_autoplaced yes)
 		(uuid "8948450c-4eb7-46bb-a74b-c38430b13e04")
 		(property "Reference" "F1"
-			(at 128.27 100.3299 0)
+			(at 127 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6523,7 +6630,7 @@
 			)
 		)
 		(property "Value" "Polyfuse"
-			(at 128.27 102.8699 0)
+			(at 127 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6534,7 +6641,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_Bourns_MF-RHT050"
-			(at 124.46 96.52 0)
+			(at 123.19 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6546,7 +6653,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 101.6 0)
+			(at 124.46 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6557,7 +6664,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 125.73 101.6 0)
+			(at 124.46 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
