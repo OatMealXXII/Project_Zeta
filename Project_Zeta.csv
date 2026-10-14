@@ -1,14 +1,14 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"D1, D3";"D_SMA";2;"SS14";;;
-2;"D2, D4";"D_SMA";2;"SMAJ5.0A";;;
-3;"H1, H2, H3";"TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal";3;"TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal";;;
-4;"H4";"TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal";1;"TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.08mm_Horizontal";;;
-5;"J1, J2";"PinSocket_1x20_P2.54mm_Vertical";2;"Conn_01x20";;;
-6;"J4";"PinHeader_1x08_P2.54mm_Horizontal";1;"Conn_01x08";;;
-7;"J5";"PinHeader_1x02_P2.54mm_Horizontal";1;"Conn_01x02";;;
-8;"J6, J7";"SolderWire-0.25sqmm_1x01_D0.65mm_OD2mm";2;"Conn_01x01";;;
-9;"Power_in";"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal";1;"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal";;;
-10;"REF**, REF**";"C_Disc_D5.0mm_W2.5mm_P2.50mm";2;"C_Disc_D5.0mm_W2.5mm_P2.50mm";;;
-11;"REF**, REF**";"CP_Radial_D6.3mm_P2.50mm";2;"CP_Radial_D6.3mm_P2.50mm";;;
-12;"REF**, REF**";"Fuse_Bourns_MF-RHT050";2;"Fuse_Bourns_MF-RHT050";;;
-13;"RESET1";"PinHeader_1x02_P2.54mm_Vertical";1;"Conn_01x02_Pin";;;
+Comment,Designator,Footprint,LCSC Part #
+100uF,"C1, C4",CP_Radial_D6.3mm_P2.50mm,
+0.1uF,"C2, C3",C_0805_2012Metric,C49678
+SS14,"D1, D3",D_SMA,C2480
+SMAJ5.0A,"D2, D4",D_SMA,C10758
+Polyfuse,"F1, F2",Fuse_1812_4532Metric,C71182
+MKDS_1_5_4,"H1, H2, H3","TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal",
+MKDS_1_5_4,H4,"TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.08mm_Horizontal",
+Conn_01x20,"J1, J2",PinSocket_1x20_P2.54mm_Vertical,
+Screw_Terminal_01x02,J3,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",
+Conn_01x08,J4,PinHeader_1x08_P2.54mm_Horizontal,
+Conn_01x02,J5,PinHeader_1x02_P2.54mm_Horizontal,
+Conn_01x01,"J6, J7",SolderWire-0.25sqmm_1x01_D0.65mm_OD2mm,
+Conn_01x02_Pin,RESET1,PinHeader_1x02_P2.54mm_Vertical,

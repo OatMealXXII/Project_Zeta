@@ -3917,16 +3917,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 105.41) (xy 119.38 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11f2b161-0338-40fb-ac2e-6c089af4ab62")
-	)
-	(wire
-		(pts
 			(xy 132.08 74.93) (xy 132.08 78.74)
 		)
 		(stroke
@@ -4064,16 +4054,6 @@
 			(type default)
 		)
 		(uuid "3dacfeec-96d2-4309-8620-d1eefb93fbb6")
-	)
-	(wire
-		(pts
-			(xy 123.19 97.79) (xy 125.73 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41801d05-6448-47de-b257-8f3a1ab3d55d")
 	)
 	(wire
 		(pts
@@ -4497,16 +4477,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 105.41) (xy 119.38 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b74acd49-315e-4179-bbd0-4b67ca2a3c32")
-	)
-	(wire
-		(pts
 			(xy 147.32 73.66) (xy 139.7 73.66)
 		)
 		(stroke
@@ -4824,6 +4794,16 @@
 			(justify left bottom)
 		)
 		(uuid "3063f143-9f76-4089-b494-1b8d9bcc3624")
+	)
+	(label "+5V"
+		(at 125.73 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32286e4c-fea7-407f-a623-7c401c8f3963")
 	)
 	(label "VBUS"
 		(at 134.62 114.3 0)
@@ -5494,7 +5474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 195.58 102.5652 0)
 			(hide yes)
 			(show_name no)
@@ -6521,7 +6501,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 123.19 101.6 0)
+		(at 125.73 101.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6532,29 +6512,29 @@
 		(fields_autoplaced yes)
 		(uuid "8948450c-4eb7-46bb-a74b-c38430b13e04")
 		(property "Reference" "F1"
-			(at 125.73 100.3299 0)
+			(at 128.27 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "Polyfuse"
-			(at 125.73 102.8699 0)
+			(at 128.27 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 124.46 106.68 0)
+		(property "Footprint" "Fuse:Fuse_Bourns_MF-RHT050"
+			(at 124.46 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6566,7 +6546,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 101.6 0)
+			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6577,7 +6557,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 123.19 101.6 0)
+			(at 125.73 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,7 +6615,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 195.58 107.6452 0)
 			(hide yes)
 			(show_name no)
@@ -7107,7 +7087,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 120.65 79.7052 0)
 			(hide yes)
 			(show_name no)
@@ -7964,7 +7944,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fuse:Fuse_Bourns_MF-RHT050"
 			(at 199.39 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8125,7 +8105,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 120.65 84.7852 0)
 			(hide yes)
 			(show_name no)
@@ -8374,7 +8354,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 116.84 107.95 0)
 			(hide yes)
 			(show_name no)

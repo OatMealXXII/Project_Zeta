@@ -204,7 +204,7 @@
 			(at 8.75 -6.75 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "21e75912-f5d8-42ac-91df-e00a5cd22d6e")
+			(uuid "0a96c3e0-00e3-45e5-9771-90ce22dc5310")
 			(effects
 				(font
 					(size 1 1)
@@ -215,7 +215,7 @@
 		(property "Value" "TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
 			(at 7.5 5.72 0)
 			(layer "F.Fab")
-			(uuid "63dae2df-0d33-4fef-885d-d1bcaff00453")
+			(uuid "36059d02-ae61-4a16-85aa-b3390273a738")
 			(effects
 				(font
 					(size 1 1)
@@ -227,7 +227,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4bb0601c-0c80-4ec9-9875-785aa3159259")
+			(uuid "54a0a3c4-c48a-4723-8d51-78b99b92646f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -238,7 +238,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4f9c0a4e-6eb2-4a89-b294-f11b41df3187")
+			(uuid "a0c58317-8b6c-461b-9ffb-d1b0b31edede")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -655,7 +655,7 @@
 			(at 7.5 -6.32 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "340243c2-7e77-4455-a8aa-aff141f0b465")
+			(uuid "fd0ac806-d3fe-4119-94f4-027d2e80b5dc")
 			(effects
 				(font
 					(size 1 1)
@@ -666,7 +666,7 @@
 		(property "Value" "TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
 			(at 7.5 5.72 0)
 			(layer "F.Fab")
-			(uuid "7e3624b9-da83-4099-9fcf-c7be44ba55e3")
+			(uuid "6228c343-f134-49ec-9586-fba09d523cb5")
 			(effects
 				(font
 					(size 1 1)
@@ -678,7 +678,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4fd1dbba-e596-44a2-9f73-cd4a59ca06f2")
+			(uuid "e1eab968-e9fb-4315-b3e6-220c5c568417")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -689,7 +689,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cc02f357-24bb-4469-80cc-f354df63092b")
+			(uuid "768628c7-e0f1-435a-9cdc-c7cd055ed50a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1102,11 +1102,11 @@
 		(at 116.9 115.05 90)
 		(descr "PTC Resettable Fuse, Ihold = 0.5A, Itrip=0.92A, http://www.bourns.com/docs/product-datasheets/mfrht.pdf")
 		(tags "ptc resettable fuse polyfuse THT")
-		(property "Reference" "REF**"
+		(property "Reference" "F1"
 			(at 2.55 -1.9 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "a661cb10-f290-49bb-b3ea-cf44b3d26761")
+			(uuid "f59a356b-2fe3-4bb9-99a5-fb8cefbf7253")
 			(effects
 				(font
 					(size 1 1)
@@ -1114,10 +1114,10 @@
 				)
 			)
 		)
-		(property "Value" "Fuse_Bourns_MF-RHT050"
+		(property "Value" "Polyfuse"
 			(at 3.05 -2.4 90)
 			(layer "F.Fab")
-			(uuid "aaceb9fc-a713-43ca-b553-816eecbc5531")
+			(uuid "020d31ab-3f99-42e2-b2ed-8c421bd5265d")
 			(effects
 				(font
 					(size 1 1)
@@ -1129,7 +1129,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "253f3ce5-e781-41b1-ab82-c0e4a4b04c1f")
+			(uuid "f6c080d9-d348-433e-8a7e-e875deeb9fa1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1140,7 +1140,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b26eb614-4dd2-45bd-85bf-1c353a437838")
+			(uuid "f8189e72-8ecc-405a-878a-c55f30a2c877")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1157,6 +1157,16 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property ki_fp_filters "*polyfuse* *PTC*")
+		(path "/8948450c-4eb7-46bb-a74b-c38430b13e04")
+		(sheetname "/")
+		(sheetfile "Project_Zeta.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -1260,7 +1270,8 @@
 			(drill 0.71)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V")
+			(net "+5V")
+			(pintype "passive")
 			(uuid "b420612c-8665-406e-b889-9272e58fc56b")
 		)
 		(pad "2" thru_hole circle
@@ -1270,6 +1281,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D1-A)")
+			(pintype "passive")
 			(uuid "cedeb5c8-3caf-4410-835b-9aab670360ac")
 		)
 		(embedded_fonts no)
@@ -2023,14 +2035,14 @@
 	(footprint "Fuse:Fuse_Bourns_MF-RHT050"
 		(layer "F.Cu")
 		(uuid "4b6946df-8462-475b-a0da-311a8b14ceed")
-		(at 158.4 123.05 90)
+		(at 159.6 117.95 -90)
 		(descr "PTC Resettable Fuse, Ihold = 0.5A, Itrip=0.92A, http://www.bourns.com/docs/product-datasheets/mfrht.pdf")
 		(tags "ptc resettable fuse polyfuse THT")
-		(property "Reference" "REF**"
+		(property "Reference" "F2"
 			(at 2.55 -1.9 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "c43d6249-2bbc-4767-aec3-bb3a32a088fd")
+			(uuid "b0ead8e4-6fed-4116-8b02-046e7c95f643")
 			(effects
 				(font
 					(size 1 1)
@@ -2038,10 +2050,10 @@
 				)
 			)
 		)
-		(property "Value" "Fuse_Bourns_MF-RHT050"
+		(property "Value" "Polyfuse"
 			(at 3.05 -2.4 90)
 			(layer "F.Fab")
-			(uuid "b10e0057-116e-4ea1-930b-6517be51fd19")
+			(uuid "cf35f0ee-4e5f-4909-856d-686043067399")
 			(effects
 				(font
 					(size 1 1)
@@ -2053,7 +2065,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "84c373a4-fd4e-4cbd-aca1-46f7c8999116")
+			(uuid "c6e26cfe-08f2-4576-9b8d-4040e6c0ef44")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +2076,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "89f37ae4-24cf-4c86-b68c-1bd42a7bcf23")
+			(uuid "383eb7da-80d8-44b2-9a06-dfee26959461")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2083,47 +2095,27 @@
 				)
 			)
 		)
+		(property ki_fp_filters "*polyfuse* *PTC*")
+		(path "/db1daa8c-e9cc-44bc-930c-c74ba2e3bc98")
+		(sheetname "/")
+		(sheetfile "Project_Zeta.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 6.35 -1)
-			(end 6.35 2.2)
+			(start -1.25 2.2)
+			(end -1.25 -1)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "a487f0cc-ab89-483a-b4a7-723c5ea46009")
-		)
-		(fp_line
-			(start 0.578 -1)
-			(end 6.35 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c4bd3cc9-4db1-4f4b-ae23-6aaf3f68d363")
-		)
-		(fp_line
-			(start -1.25 -1)
-			(end -0.578 -1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a4a6c6e3-23ad-400f-ad58-0fbcda86fc9e")
-		)
-		(fp_line
-			(start 6.35 2.2)
-			(end 5.678 2.2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e311ecd4-51a9-46f5-a93c-027b10701075")
+			(uuid "e9c1436e-733b-4953-876d-508264e285bd")
 		)
 		(fp_line
 			(start 4.522 2.2)
@@ -2136,14 +2128,44 @@
 			(uuid "c985c7bd-111b-4213-a465-c24ab45d2dc5")
 		)
 		(fp_line
-			(start -1.25 2.2)
-			(end -1.25 -1)
+			(start 6.35 2.2)
+			(end 5.678 2.2)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "e9c1436e-733b-4953-876d-508264e285bd")
+			(uuid "e311ecd4-51a9-46f5-a93c-027b10701075")
+		)
+		(fp_line
+			(start -1.25 -1)
+			(end -0.578 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a4a6c6e3-23ad-400f-ad58-0fbcda86fc9e")
+		)
+		(fp_line
+			(start 0.578 -1)
+			(end 6.35 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c4bd3cc9-4db1-4f4b-ae23-6aaf3f68d363")
+		)
+		(fp_line
+			(start 6.35 -1)
+			(end 6.35 2.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a487f0cc-ab89-483a-b4a7-723c5ea46009")
 		)
 		(fp_rect
 			(start -1.4 -1.15)
@@ -2179,21 +2201,23 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 90)
-			(size 1.71 1.71)
-			(drill 0.71)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net "/B+")
-			(uuid "dced70c8-bc10-4b79-a098-e0c8e7b140f1")
-		)
-		(pad "2" thru_hole circle
-			(at 5.1 1.2 90)
+			(at 0 0 270)
 			(size 1.71 1.71)
 			(drill 0.71)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D3-A)")
+			(pintype "passive")
+			(uuid "dced70c8-bc10-4b79-a098-e0c8e7b140f1")
+		)
+		(pad "2" thru_hole circle
+			(at 5.1 1.2 270)
+			(size 1.71 1.71)
+			(drill 0.71)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "/B+")
+			(pintype "passive")
 			(uuid "f06a54de-c79a-46da-991a-07a52805b150")
 		)
 		(embedded_fonts no)
@@ -2215,7 +2239,7 @@
 		(at 117.5 98.5 180)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, diameter=6.3mm, height=7mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm diameter 6.3mm height 7mm Electrolytic Capacitor")
-		(property "Reference" "REF**"
+		(property "Reference" "C1"
 			(at -0.317621 -5 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2227,7 +2251,7 @@
 				)
 			)
 		)
-		(property "Value" "CP_Radial_D6.3mm_P2.50mm"
+		(property "Value" "100uF"
 			(at 0.5 6.5 0)
 			(layer "F.Fab")
 			(uuid "3f0c7cf2-f754-4961-b1b6-13379e4ae8aa")
@@ -2270,6 +2294,16 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property ki_fp_filters "CP_*")
+		(path "/e2e30919-53e5-4580-af9c-d01274083b76")
+		(sheetname "/")
+		(sheetfile "Project_Zeta.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -3706,6 +3740,7 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15625)
 			(net "/VSYS")
+			(pintype "passive")
 			(uuid "651d2d11-2885-49a4-943c-8e4cbe29a0d9")
 		)
 		(pad "2" thru_hole circle
@@ -3715,6 +3750,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pintype "passive")
 			(uuid "336fe1fb-3a06-4926-83e6-34c7fccb8573")
 		)
 		(embedded_fonts no)
@@ -3736,11 +3772,11 @@
 		(at 164.5 117.5 -90)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, diameter=6.3mm, height=7mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm diameter 6.3mm height 7mm Electrolytic Capacitor")
-		(property "Reference" "REF**"
+		(property "Reference" "C4"
 			(at -0.317621 -5 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "de015f63-fba0-4695-85e4-76c0368d77af")
+			(uuid "b87a016c-7f38-469f-99a2-a59a1759e970")
 			(effects
 				(font
 					(size 1 1)
@@ -3748,10 +3784,10 @@
 				)
 			)
 		)
-		(property "Value" "CP_Radial_D6.3mm_P2.50mm"
+		(property "Value" "100uF"
 			(at 0.5 6.5 90)
 			(layer "F.Fab")
-			(uuid "a82a8ba5-7468-4702-8dd9-2e7a9af0aafe")
+			(uuid "c95b3835-43ca-4831-a94c-90a1c8d13087")
 			(effects
 				(font
 					(size 1 1)
@@ -3763,7 +3799,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "83dfbb56-e523-4140-a29c-d09f734c56fe")
+			(uuid "5211e6fd-f1ab-4450-8edf-a9cd0948794b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3774,7 +3810,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d2020793-c644-46b5-a057-184cd4ac2462")
+			(uuid "c361502e-fa5e-4639-a72a-21920f3587a2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3791,6 +3827,16 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property ki_fp_filters "CP_*")
+		(path "/89550bde-ba3f-4ba9-99a7-eb26312e1dcf")
+		(sheetname "/")
+		(sheetfile "Project_Zeta.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -5227,6 +5273,7 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15625)
 			(net "/3V3_EXT")
+			(pintype "passive")
 			(uuid "232d905a-9e87-4a4a-b18b-07eb47959498")
 		)
 		(pad "2" thru_hole circle
@@ -5236,6 +5283,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pintype "passive")
 			(uuid "240b741a-d360-446d-84b3-06bda302a8c2")
 		)
 		(embedded_fonts no)
@@ -5965,7 +6013,7 @@
 			(at 7.5 -6.32 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "22593e9e-b532-4cd7-8b1a-55902e3c341c")
+			(uuid "db733980-eb5d-49f5-8a75-71ffe39c51b4")
 			(effects
 				(font
 					(size 1 1)
@@ -5976,7 +6024,7 @@
 		(property "Value" "TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.08mm_Horizontal"
 			(at 7.5 5.72 90)
 			(layer "F.Fab")
-			(uuid "a436dd44-ade2-49c3-8a90-fd91ea92cddb")
+			(uuid "74da8a01-6409-4ee8-8750-8c52b8df2b0a")
 			(effects
 				(font
 					(size 1 1)
@@ -5988,7 +6036,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6d30b3a2-b4df-4de5-b8b2-dc66736b16bc")
+			(uuid "8c8a746f-6dfc-4e79-93b3-09e01612b3a2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5999,7 +6047,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a8ee794f-1431-438f-bb30-76962254c596")
+			(uuid "102ed66c-57f3-4d21-8518-2bd412bae879")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7269,10 +7317,10 @@
 		(at 114.5 122.6725)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
-		(property "Reference" "Power_in"
+		(property "Reference" "J3"
 			(at -4 -0.1725 90)
 			(layer "F.SilkS")
-			(uuid "d009ad90-f570-4708-a73c-3d0e343e3387")
+			(uuid "531f8dc2-88d6-45be-bc42-b07b3e8ea720")
 			(effects
 				(font
 					(size 1 1)
@@ -7280,10 +7328,10 @@
 				)
 			)
 		)
-		(property "Value" "TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
+		(property "Value" "Screw_Terminal_01x02"
 			(at 1 9.3275 0)
 			(layer "F.Fab")
-			(uuid "86d15382-3f5c-47e9-a528-10a58c0ffa31")
+			(uuid "d29a0127-2935-4c3c-a195-aea86988e539")
 			(effects
 				(font
 					(size 1 1)
@@ -7295,7 +7343,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8ef539de-939f-440b-a2f3-b33d6f217803")
+			(uuid "5008beea-a741-406c-beae-788522c8cae1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7306,7 +7354,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e2dfffb5-c633-4bf1-a597-17e580b8dd83")
+			(uuid "5db9cf8d-d935-4f69-92f8-e757bf358810")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7323,6 +7371,16 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property ki_fp_filters "TerminalBlock*:*")
+		(path "/ef7e02a6-31ba-4261-9e2e-86aff859bbc7")
+		(sheetname "/")
+		(sheetfile "Project_Zeta.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -7591,6 +7649,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.096154)
 			(net "GND")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
 			(uuid "6ab629f0-d419-4517-a49a-77f2f00844e8")
 		)
 		(pad "2" thru_hole circle
@@ -7599,7 +7659,9 @@
 			(drill 1.3)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "5V")
+			(net "+5V")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
 			(uuid "00211f7a-6416-4470-9c11-01c017775341")
 		)
 		(embedded_fonts no)
@@ -7753,11 +7815,11 @@
 		(at 169.5 117.75 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "REF**"
+		(property "Reference" "C3"
 			(at 1.25 -2.5 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b29d9959-abe9-423a-981a-5040874c6c31")
+			(uuid "aa5ffb09-48b0-449f-8dcb-d7236cb682bc")
 			(effects
 				(font
 					(size 1 1)
@@ -7765,10 +7827,10 @@
 				)
 			)
 		)
-		(property "Value" "C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Value" "0.1uF"
 			(at 9 -4.5 0)
 			(layer "F.Fab")
-			(uuid "f80c6e38-fa8f-48f3-93b4-53d332c50343")
+			(uuid "013c1612-12f6-4d15-a1bf-2cae4e7dc104")
 			(effects
 				(font
 					(size 1 1)
@@ -7780,7 +7842,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e8fe5c51-d555-4c1e-983f-0bc786b8f028")
+			(uuid "d1a06004-f328-4c8f-9425-86aa28ac6097")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7791,7 +7853,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "924cb5eb-50c1-46b4-8012-a0bc3ad1c353")
+			(uuid "6b6ee485-3d5d-4301-8f6e-cf2ad661d3b5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7808,6 +7870,16 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/03e43093-b660-4207-b567-c10f5f23468a")
+		(sheetname "/")
+		(sheetfile "Project_Zeta.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -7892,6 +7964,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3V3_EXT")
+			(pintype "passive")
 			(uuid "b5992c2b-287f-4028-9e9e-d3aff4723302")
 		)
 		(pad "2" thru_hole circle
@@ -7901,6 +7974,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pintype "passive")
 			(uuid "04bb70ae-0959-4d59-8b82-baf556a275ba")
 		)
 		(embedded_fonts no)
@@ -7922,11 +7996,11 @@
 		(at 117.5 105 180)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm diameter 5mm width 2.5mm Capacitor")
-		(property "Reference" "REF**"
+		(property "Reference" "C2"
 			(at 1.25 -2.5 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "dab81bc6-ed87-447a-a35a-768a04e44966")
+			(uuid "81c19d1f-294a-41ad-bf8a-02c80b383454")
 			(effects
 				(font
 					(size 1 1)
@@ -7934,10 +8008,10 @@
 				)
 			)
 		)
-		(property "Value" "C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Value" "0.1uF"
 			(at 9 -4.5 90)
 			(layer "F.Fab")
-			(uuid "b865ee80-b988-48d2-acd7-5350d887b4e6")
+			(uuid "95eaa17b-1479-452f-b28d-7b64f24758e5")
 			(effects
 				(font
 					(size 1 1)
@@ -7949,7 +8023,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e7da2942-fb6b-4563-93f7-48fef1f41545")
+			(uuid "a2bdf27a-6d0b-40a7-b21b-e6ed349dacd8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7960,7 +8034,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "564a37dd-1b28-4fde-af7d-9ca36420c493")
+			(uuid "fc4a8af5-8c34-4bc9-a98c-cac788f99b9b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7977,6 +8051,16 @@
 					(size 1 1)
 					(thickness 0.15)
 				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/9c398b65-9632-43f8-9d43-59cb98b085ef")
+		(sheetname "/")
+		(sheetfile "Project_Zeta.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
 			)
 		)
 		(attr through_hole)
@@ -8061,6 +8145,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/VSYS")
+			(pintype "passive")
 			(uuid "c4f59aa3-bf59-433b-ac8f-235c8d025900")
 		)
 		(pad "2" thru_hole circle
@@ -8070,6 +8155,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pintype "passive")
 			(uuid "9ceb96d2-1a8d-4c2e-a20e-f9c56a6d6929")
 		)
 		(embedded_fonts no)
@@ -10186,7 +10272,7 @@
 			(at 7.5 -6.32 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "3ce76157-3a0f-4743-9ae3-94935be2673d")
+			(uuid "38b04d23-fdf1-4cf3-9a1a-6deaf4536eb2")
 			(effects
 				(font
 					(size 1 1)
@@ -10197,7 +10283,7 @@
 		(property "Value" "TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal"
 			(at 7.5 5.72 90)
 			(layer "F.Fab")
-			(uuid "6cc74a7d-64c2-4a46-8be8-a98b89b82e20")
+			(uuid "387623b8-4600-41aa-af8a-00d044591af9")
 			(effects
 				(font
 					(size 1 1)
@@ -10209,7 +10295,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "715f2df8-344c-4941-97f4-e3fad8a78c05")
+			(uuid "d93e1e72-2f83-42c6-b154-bbf20eb745ef")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10220,7 +10306,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "444c71d0-68bf-40a6-b207-d5688edec3ba")
+			(uuid "6781fb7a-021b-4324-9bb5-6e80a49040ba")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11139,7 +11225,7 @@
 		(uuid "0b8259e0-151b-4398-8784-9e04ed451765")
 	)
 	(via
-		(at 153.75 122.75)
+		(at 155 120)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -11692,22 +11778,6 @@
 		(uuid "8030e99b-a167-4b11-8417-2cc9f7545059")
 	)
 	(segment
-		(start 116.9 120.0725)
-		(end 116.9 115.05)
-		(width 0.7)
-		(layer "F.Cu")
-		(net "5V")
-		(uuid "1f189caa-6420-4b62-ac0a-754815dae589")
-	)
-	(segment
-		(start 119.5 122.6725)
-		(end 116.9 120.0725)
-		(width 0.7)
-		(layer "F.Cu")
-		(net "5V")
-		(uuid "6153712e-ceda-4528-a8f6-aedd7750eb79")
-	)
-	(segment
 		(start 118.1 109.95)
 		(end 120 109.95)
 		(width 0.7)
@@ -11956,20 +12026,20 @@
 		(uuid "e8910033-d8b7-4968-8f9c-d5e35963bbf1")
 	)
 	(segment
-		(start 158.5 123.15)
-		(end 158.4 123.05)
-		(width 0.7)
-		(layer "F.Cu")
-		(net "/B+")
-		(uuid "869709a7-495e-4873-9514-13c817b77b2c")
-	)
-	(segment
 		(start 158.5 127.5)
 		(end 158.5 123.15)
 		(width 0.7)
 		(layer "F.Cu")
 		(net "/B+")
-		(uuid "f05c9b0a-d5bf-47e9-9bfd-3dfcd26ae325")
+		(uuid "bbf03d4f-01fb-4aa3-98a7-786ebccf3fb2")
+	)
+	(segment
+		(start 158.5 123.15)
+		(end 158.4 123.05)
+		(width 0.7)
+		(layer "F.Cu")
+		(net "/B+")
+		(uuid "f4d18197-482e-4ea8-a2ae-2cb174139da8")
 	)
 	(segment
 		(start 159.6 115.6)
@@ -11977,7 +12047,7 @@
 		(width 0.7)
 		(layer "F.Cu")
 		(net "Net-(D3-A)")
-		(uuid "4abb37a0-63fd-454c-8b23-af947f9b222e")
+		(uuid "02dee92f-4b8f-487d-b96b-5cec57e2f920")
 	)
 	(segment
 		(start 159.6 117.95)
@@ -11985,7 +12055,7 @@
 		(width 0.7)
 		(layer "F.Cu")
 		(net "Net-(D3-A)")
-		(uuid "fd8bf610-9b86-4e43-b8da-1075140dfe88")
+		(uuid "24a55737-41ae-4e57-bdff-4b1539b2008c")
 	)
 	(segment
 		(start 121.75 108.25)
@@ -12674,6 +12744,22 @@
 		(layer "F.Cu")
 		(net "/GP8")
 		(uuid "ed3e9fcd-7188-4925-ae3e-f031cd7ab83b")
+	)
+	(segment
+		(start 116.9 120.0725)
+		(end 116.9 115.05)
+		(width 0.7)
+		(layer "F.Cu")
+		(net "+5V")
+		(uuid "1f189caa-6420-4b62-ac0a-754815dae589")
+	)
+	(segment
+		(start 119.5 122.6725)
+		(end 116.9 120.0725)
+		(width 0.7)
+		(layer "F.Cu")
+		(net "+5V")
+		(uuid "6153712e-ceda-4528-a8f6-aedd7750eb79")
 	)
 	(zone
 		(net "GND")
