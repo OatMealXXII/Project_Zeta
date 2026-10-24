@@ -1,90 +1,94 @@
-# IoT Carrier Board for ESP32 (Project Zeta) - Rev 1.1
+# IoT Carrier Board for Raspberry Pi Pico 2 / 2W (Project Zeta) - Rev 1.1
 
-A modular, IoT Carrier Board designed for Rasberry Pi Pico 2 or 2W microcontrollers deployed in outdoor and edge computing environments. This board provides robust power distribution, multi-stage electrical protection, and clean sensor I/O interfacing.
+A rugged, modular IoT carrier board designed for Raspberry Pi Pico 2 and Pico 2W microcontrollers deployed in harsh outdoor, telemetry, and edge-computing environments. This board integrates primary surge protection, reverse-polarity defense, isolated grounding, and sensor interface expansion.
 
 ---
 
 ## Architecture & Design Highlights
 
-* **Modular Carrier Architecture:** Separates power protection and signal distribution from core computing logic, enabling rapid replacement and low maintenance overhead.
-* **KISS Principle Hardware:** Built purely on highly reliable passive and discrete semiconductor protection circuits, avoiding fragile active control logic and preserving zero-quiescent-current operation.
-* **Integrated Cell & System Safety:** Operates alongside external battery-level protection to create an end-to-end multi-layer defense against physical and electrical hazards.
+- **Modular Carrier Architecture:** Separates power handling, field protection, and physical wiring from the core logic board, enabling hot-swap servicing and low maintenance overhead.
+- **Hardware-First Resilience (KISS Principle):** Built entirely with robust discrete semiconductors and passive protection networks, eliminating fragile active supervisory ICs and maintaining zero quiescent current drain.
+- **Sub-Layer High-Energy Routing:** High-current surge paths and gas discharge loops are isolated on the bottom layer to eliminate transient EMI coupling into sensitive microcontroller logic.
+- **Dual-Domain Ground Separation:** Features a dedicated `*Earth ⏚` path isolated from logic/signal GND, specifically routed to safely divert atmospheric lightning surges and external ESD directly into structural grounding.
 
 ---
 
-## Power & Protection Subsystem
+## Power & Surge Protection Subsystem
 
-The input power stage incorporates a multi-tier protection network designed to withstand harsh field operating conditions:
-
-```
-[DC Input / 1S Li-ion Battery]
-           │
-           ▼
-    [Polyfuse (0.65A)]  ──── (Overcurrent / Short-Circuit Protection)
-           │
-           ├────────────► [TVS Diode SMAJ5.0A] ──► GND (Overvoltage Clamping / ESD)
-           │
-     [SS14 Schottky]    ──── (Reverse Polarity Protection)
-           │
-           ├────────────► [100µF Bulk Cap]     ──► GND (Inrush Buffering / Transient Storage)
-           ├────────────► [100nF Ceramic Cap]  ──► GND (High-Frequency Noise Filtering)
-           │
-           ▼
-    [VCC Distribution / Regulated Bus to MCU & Sensors]
 
 ```
 
-### Component Justification & Specifications
+[External Surge / Lightning ESD]
+│
+▼
+[GDT (GD1)] ────────────────────────► *Earth ⏚ (Chassis / Field Ground)
+│
+[DC Input / 1S Li-ion Battery]                  │ (Isolated Domain)
+│                                   ▼
+▼                              [Earth Rod]
+[SS14 Schottky (D1)] ───► (Reverse-Polarity Protection)
+│
+├───────────────► [TVS Diode (D2)] ──► Signal GND (Overvoltage Clamping)
+│
+├───────────────► [100µF Bulk Cap]  ──► Signal GND (Inrush & Transient Reservoir)
+├───────────────► [100nF Ceramic]   ──► Signal GND (High-Frequency Decoupling)
+│
+▼
+[Regulated VCC Bus / 3V3_EXT Rail to Pico & Sensor Interfaces]
 
-| Component | Designator | Specification / Package | Primary Engineering Function |
-| --- | --- | --- | --- |
-| **Resettable PTC Fuse** | `F1` | RXEF065 (Hold: 0.65A, Trip: ~1.3A) | Interrupts sustained overcurrent and short-circuit conditions without requiring component replacement. |
-| **TVS Diode** | `D2` | SMAJ5.0A (SMA / DO-214AC) | Clamps overvoltage spikes, lightning transients, and ESD to ground in nanosecond response times. |
-| **Schottky Barrier Diode** | `D1` | SS14 (1A / 40V, SMA / DO-214AC) | Blocks reverse-polarity voltage connection with minimal forward voltage drop ($V_F \approx 0.35\text{V}$). |
-| **Electrolytic Capacitor** | `C1` | 100µF 50V (Radial / Low ESR) | Absorbs input ripple and provides reservoir current during Wi-Fi / LoRa transmission bursts. |
-| **Ceramic Capacitor** | `C2` | 100nF (2A104J / Metallized Film) | High-frequency noise suppression and decoupling right before system regulation. |
+```
 
----
+### Component Specifications & Engineering Justification
 
-## Battery Subsystem
-
-* **Configuration:** 1S4P (1-Series, 4-Parallel) Lithium-ion battery pack. (You can use 3P,2P,1P as you need but it's only support 1S DO NOT USE 2S,3S,4S Battery if you want just control it's in 1.8V-5.5V)
-* **Nominal Voltage:** 3.7V (Charging ceiling: 4.2V).
-* **Pack Protection:** External 1S 2.5A BMS module providing fundamental cell overcharge, overdischarge, and primary short-circuit isolation.
-* **Selectivity Coordination:** The carrier board’s 0.65A Polyfuse trips (~1.3A) before triggering the BMS's 2.5A threshold, isolating downstream carrier faults while preserving continuous battery operation.
-
----
-
-## Commissioning & Verification (Bring-up Guide)
-
-### 1. Visual & Unpopulated Continuity Inspection
-
-1. Inspect silkscreen polarity markings (`+` and `-`) against schematic footprints.
-2. Using a digital multimeter in continuity mode, probe between `VCC` and `GND`.
-* *Pass Criteria:* No audible beep / open circuit ($>1\text{ M}\Omega$).
-
-
-
-### 2. Protection Stage Population (Cold Test)
-
-1. Solder `F1`, `D1`, `D2`, `C1`, and `C2` onto the PCB.
-2. Probe continuity across `VCC` and `GND` again to verify no solder bridging on diode pads.
-3. Test `D1` and `D2` in Diode Mode to ensure cathode/anode orientation aligns with footprint markings.
-
-### 3. First Power-Up (Smoke Test)
-
-1. Supply 3.7V–5.0V DC to the board input using a bench power supply with current limiting enabled (set limit to 100mA).
-2. Measure DC voltage at the MCU power headers.
-* *Pass Criteria:* Voltage reads accurately within expected bounds with negligible quiescent current draw.
-
-
+| Designator | Component | Specification / Package | Engineering Function |
+| :--- | :--- | :--- | :--- |
+| **`GD1`** | **Gas Discharge Tube (GDT)** | 2-Electrode Axial (Spark-over: ~90V–230V) | **Primary surge barrier.** Shunts high-energy transient spikes (kA surge capacity) directly to earth ground without burning the PCB traces. |
+| **`D1`, `D3`** | **Schottky Barrier Diode** | SS14 (1A / 40V, SMA / DO-214AC) | Blocks reverse-polarity voltage connection with ultra-low forward voltage drop ($V_F \approx 0.35\text{V}$) on input buses. |
+| **`D2`, `D4`** | **TVS / Clamping Diode** | SMAJ5.0A (SMA / DO-214AC) | Suppresses residual fast transients and clamps overvoltage to safe logic thresholds within nanosecond response times. |
+| **`C1`, `C3`** | **Electrolytic Capacitor** | 100µF (Radial, Low ESR) | Absorbs input voltage dips and supplies peak burst current during Wi-Fi / LoRa transmission cycles. |
+| **`C2`, `C4`** | **Ceramic Capacitor** | 100nF (Radial / Multilayer) | Suppresses high-frequency switching noise adjacent to power distribution headers. |
+| **`J1`, `J2`** | **Female Pin Headers** | 1x20 Pin 2.54mm Pitch | Socket interface for Raspberry Pi Pico 2 / Pico 2W. |
 
 ---
 
-![Project Zeta](https://github.com/OatMealXXII/Weather_Station/blob/master/Project_Zeta.png)
+## Power Subsystem & Battery Management
+
+- **Supported Input Topology:** 1S Li-ion / LiFePO4 battery pack (1S1P, 1S2P, 1S4P) or 5V DC step-down source.
+- **Operating Input Range:** **1.8V to 5.5V DC** (Strictly single-cell architecture; **do NOT connect 2S, 3S, or 4S packs** directly without external regulation).
+- **External BMS Coordination:** Designed to interface with an external 1S Lithium BMS module handling cell balancing, overcharge (4.2V cut-off), and deep over-discharge protection.
+- **Dedicated Sensor Power Bus (`3V3_EXT`):** Independent power tap engineered to prevent high-draw peripheral sensors from loading or resetting the internal Pico voltage regulator.
+
+---
+
+## Commissioning & Verification Guide (Smoke Test)
+
+### Step 1: Cold Test & Continuity Inspection (Unpowered)
+1. Verify silkscreen polarity symbols (`+`, `-`, and `*Earth ⏚`) across all terminal blocks.
+2. Check resistance with a digital multimeter between `VCC` and `GND` across all power rails.
+   - *Pass Criteria:* High impedance / open circuit ($>1\text{ M}\Omega$).
+3. Verify that `*Earth ⏚` is completely isolated from system `GND` on the multimeter.
+4. Test diodes `D1`–`D4` in Diode Check mode to ensure correct cathode/anode orientation.
+
+### Step 2: First Power-Up (Current-Limited Test)
+1. Set a bench power supply to **3.8V DC** with the current limit restricted to **50mA**.
+2. Connect leads to the power terminal blocks (without the Raspberry Pi Pico mounted).
+3. Measure voltage rails at pin sockets: verify clean DC voltage across `VCC`, `3V3_EXT`, and ground buses.
+   - *Pass Criteria:* Quiescent current remains $<1\text{mA}$; no thermal dissipation across protection diodes.
+
+### Step 3: Full-Load Runtime Validation
+1. Power down and securely seat the Raspberry Pi Pico 2 / 2W into headers `J1` and `J2`.
+2. Increase the power supply current limit to **500mA**.
+3. Flash edge telemetry firmware and verify Wi-Fi/LoRa transmission stability under active load.
+
+---
 
 ## Roadmap
 
-* [x] **Rev 1.0 (Previous):** 2-Layer modular carrier board prototyping, discrete protection stage validation.
-* [x] **Rev 1.1 (Current):** 2-Layer of GND plate and add 3V3_EXT with protection for high-current power sensor needed and fix some wrong point as I knew.
-* [ ] **Rev 2.0 (Planned):** 4-Layer stackup optimization featuring a dedicated solid ground plane (L2) and power plane (L3) for enhanced EMI reduction, signal integrity and support more alternative power.
+- [x] **Rev 1.0 (Prototype):** Initial 2-layer modular layout; verified discrete protection logic and basic terminal block layout.
+- [x] **Rev 1.1 (Current Production):**
+  - Upgraded to high-durability Shengyi S1000H substrate ($\text{Tg } 155^\circ\text{C}$) with tented vias.
+  - Added dedicated Primary Surge Stage via Gas Discharge Tube (**GD1**) paired with isolated **`*Earth ⏚`** terminal block.
+  - Symmetrical dual-rail topology with auxiliary high-current sensor power (**`3V3_EXT`**).
+  - Optimized footprint clearances (eliminated SMD diode soldering crowding from Rev 1.0).
+  - Strict 45° trace angle routing across both layers to eliminate acid traps and maintain signal integrity.
+- [ ] **Rev 2.0 (Planned):** 4-layer impedance-controlled stackup with dedicated inner ground and power planes (L2/L3), integrated MIFA antenna, and expanded energy-harvesting interfaces.
