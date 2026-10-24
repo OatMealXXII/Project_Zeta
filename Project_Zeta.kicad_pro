@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.8,
-          "width": 2.5
+          "drill": 1.2,
+          "height": 2.4,
+          "width": 2.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -54,12 +54,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|123500000|103477500|5ea22d6c-42b0-4fae-bf98-53ab018038f0|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -645,7 +640,7 @@
         "uuid": "b7cbf9ba-1d9b-4947-9522-3e812c70318f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "GD1,J8,#PWR17,#PWR19-22",
     "variants": []
   },
   "sheets": [
