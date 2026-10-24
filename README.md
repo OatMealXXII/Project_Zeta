@@ -82,6 +82,8 @@ A rugged, modular IoT carrier board designed for Raspberry Pi Pico 2 and Pico 2W
 
 ---
 
+![Render Board](https://github.com/OatMealXXII/Project_Zeta/blob/master/Project_Zeta.png)
+
 ## Roadmap
 
 - [x] **Rev 1.0 (Prototype):** Initial 2-layer modular layout; verified discrete protection logic and basic terminal block layout.
