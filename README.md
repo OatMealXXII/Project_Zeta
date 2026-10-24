@@ -86,7 +86,6 @@ A rugged, modular IoT carrier board designed for Raspberry Pi Pico 2 and Pico 2W
 
 - [x] **Rev 1.0 (Prototype):** Initial 2-layer modular layout; verified discrete protection logic and basic terminal block layout.
 - [x] **Rev 1.1 (Current Production):**
-  - Upgraded to high-durability Shengyi S1000H substrate ($\text{Tg } 155^\circ\text{C}$) with tented vias.
   - Added dedicated Primary Surge Stage via Gas Discharge Tube (**GD1**) paired with isolated **`*Earth ⏚`** terminal block.
   - Symmetrical dual-rail topology with auxiliary high-current sensor power (**`3V3_EXT`**).
   - Optimized footprint clearances (eliminated SMD diode soldering crowding from Rev 1.0).
