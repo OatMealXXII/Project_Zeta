@@ -1,3 +1,7 @@
+<!-- boardrepo-badge:v1 -->
+[![View on BoardRepo](https://boardrepo.com/badge/github.svg?v=2)](https://boardrepo.com/b/97e5a269-6a0b-41d2-aeff-14cdd480b631?ref=github-readme)
+<!-- /boardrepo-badge:v1 -->
+
 # IoT Carrier Board for Raspberry Pi Pico 2 / 2W (Project Zeta) - Rev 1.1
 
 A rugged, modular IoT carrier board designed for Raspberry Pi Pico 2 and Pico 2W microcontrollers deployed in harsh outdoor, telemetry, and edge-computing environments. This board integrates primary surge protection, reverse-polarity defense, isolated grounding, and sensor interface expansion.
